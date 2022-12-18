@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkers</title>
+    <link rel="stylesheet" href="./chekers.css">
+</head>
+<body>
+    <div id="startGameModal" class="modal-container exist">
+        <div class="modal-content"> 
+            <button class="button" id="startGameButton">click to start</button>
+        </div>
+    </div>
+    <div id="board" class="board"></div>
+    <!-- <div id="behindTheBoard" class="behindTheBoard">
+    </div> -->
+    <div id="footer" class="footer">
+        <div id="div-resing-button">
+            <button id="resing-button" class="button">resing</button>  <!-- end game modal -->
+        </div>
+        <h1 id="whosTurn">its WHITE turn</h1>
+        <div id="div-draw-button" >
+            <button id="draw-button" class="button">ask draw</button>
+            <div id="drawModal-container" class="modal-container none">
+                <div class="modal-content"> 
+                    tour rival ask for a draw do you accept?
+                    <button class="button" id="acceptDraw"> accept draw</button> <!-- end game modal -->
+                    <button class="button" id="denayDraw"> denay draw</button> <!-- keep playing -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end game modal -->
+<div id="endGameModal-container" class="modal-container none">
+    <div class="modal-content">
+    <div id="endGameModal-content"> 
+        who won? 
+    </div>
+        <button class="button" id="newGame" > refresh</button> <!-- refresh -->
+    </div>
+</div>
+
+    <script src="./checkers5.js"> </script>
+</body>
+</html>
